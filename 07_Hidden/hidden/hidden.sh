@@ -16,4 +16,4 @@ do
 		done
 	done
 done
-cat * | grep f
+cat READ* | grep f
