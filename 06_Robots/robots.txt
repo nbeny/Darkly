@@ -1,0 +1,8 @@
+Faille : robots.txt
+http://10.0.2.8/robots.txt
+http://10.0.2.8/whatever/
+
+htpasswd = root:8621ffdbc5698829397d97767ac13db3
+MD5 8621ffdbc5698829397d97767ac13db3 = dragon
+
+http://10.0.2.8/admin/

@@ -1,0 +1,7 @@
+Faille : input
+```
+<form action="#" method="POST">
+	<input type="hidden" name="mail" value="webmaster@borntosec.com" maxlength="15">
+	<input type="submit" name="Submit" value= "Submit">
+</form>
+```
