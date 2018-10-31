@@ -1,2 +1,8 @@
 Faille : change pass directory
+```
 http://10.0.2.8/index.php?page=../../../../../../../../../../etc/passwd
+```
+Solution :
+```
+Ne pas cette la racine de notre site web a la racine du pc...
+```

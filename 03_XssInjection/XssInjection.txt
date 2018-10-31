@@ -1,0 +1,8 @@
+Faille : Xss Injection
+```
+<script>alert(document.cookie)</script>
+```
+Solution :
+```
+	Parser la chaine et checker si la chaine est conforme ou ne pas accepter l'interpreteur HTML dans l'affichage pour eviter l4injection de code
+```

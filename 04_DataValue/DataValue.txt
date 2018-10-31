@@ -1,0 +1,9 @@
+Faille : Data Value
+```
+envoyer une value depassant l'int max
+```
+Solution :
+```
+empecher le changement des variables et les bloquer de 1 a 10
+```
+

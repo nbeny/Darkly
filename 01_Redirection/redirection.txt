@@ -1,2 +1,7 @@
 Faille : Redirection in url
 http://10.0.2.8/index.php?page=redirect&site=admin
+
+Solution :
+```
+Gerer la redirection en back et pas en front
+```

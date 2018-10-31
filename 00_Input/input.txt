@@ -5,3 +5,8 @@ Faille : input
 	<input type="submit" name="Submit" value= "Submit">
 </form>
 ```
+
+Solution :
+```
+	Ne pas gerer l'envois par mail en front mais en back
+```
