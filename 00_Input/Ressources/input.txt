@@ -8,5 +8,5 @@ Faille : input
 
 Solution :
 ```
-	Ne pas gerer l'envois par mail en front mais en back
+	Verifier la valeur envoyé en back
 ```

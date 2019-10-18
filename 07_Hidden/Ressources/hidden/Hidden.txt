@@ -1,0 +1,8 @@
+Faille : Hidden
+```
+Fouiller les dossiers et fichiers
+```
+Solution :
+```
+Desactiver le directory listing ou simplement ne pas mettre les fichiers a la racine du site
+```

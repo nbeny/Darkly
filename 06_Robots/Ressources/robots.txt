@@ -1,6 +1,10 @@
 Faille : robots.txt
 ```
 http://10.0.2.8/robots.txt
+
+'Disallow: /whatever
+Disallow: /.hidden'
+
 http://10.0.2.8/whatever/
 
 htpasswd = root:8621ffdbc5698829397d97767ac13db3
@@ -10,5 +14,5 @@ http://10.0.2.8/admin/
 ```
 Solution :
 ```
-Ne pas creer une session cookie dont tout le monde a acces
+Ne pas mettre le fichier a la racine du site mais dans un dossier precedent
 ```

@@ -1,0 +1,9 @@
+Faille : Brute Force
+```
+	Recuperer un dictionnaire de mot de passe simple sur internet
+	Test de mot de passe a l'infini grace a un script
+```
+Solution :
+```
+limiter le nombre de requete simultané depuis le webserver si c'est possible ou simplement utiliser fail2ban pour analyser les logs et bannir l'ip du client en cas d'un nombre de requetes qui ne peut pas etre executer par un humain (type +10req / sec)
+```

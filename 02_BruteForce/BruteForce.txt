@@ -1,8 +1,0 @@
-Faille : Brute Force
-```
-	Test de mot de passe a l'infini possible
-```
-Solution :
-```
-bloquer le nombre de requete possible venant de la meme ip
-```

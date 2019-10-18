@@ -1,0 +1,18 @@
+Faille : Cookie
+
+#Cookie Manager
+cookie crypté en MD5
+```
+I_am_admin = 68934a3e9455fa72420237eb05902327  (detected as md5 hash)
+68934a3e9455fa72420237eb05902327 = false
+
+Now we hash 'true' in md5
+
+true = b326b5062b2f0e69046810717534cb09 
+
+modify cookie I_am_admin with b326b5062b2f0e69046810717534cb09
+```
+Solution :
+```
+Ne pas gerer l'identification admin par cookie mais avec PHP SERVER SESSION ($_SESSION)
+```

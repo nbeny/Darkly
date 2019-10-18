@@ -1,8 +1,0 @@
-Faille : Hidden
-```
-Fouiller les dossiers et fichiers
-```
-Solution :
-```
-Rien laisser :D
-```
